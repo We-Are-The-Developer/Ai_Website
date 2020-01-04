@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<script>
-	function logincheck(){
-		document.f.
-	}
-</script>
 <html lang="ko">
 <head>
     <!-- meta data -->
@@ -114,18 +109,50 @@
     </header>
     <main>
         <div class="container mt-5 mb-5">
-            <form action="../jsp/Logincheck.jsp" method="" class="login-form">    <!-- 로그인 폼 -->
-                <h3>서울뉴칼라스쿨</h3>
+            <form action="" method="" class="register-form">    <!-- 회원가입 폼 -->
+                <h3>Sign Up</h3>
                 <div class="form-group row ml-1">
                     <label for="exampleInputEmail1" class="col-form-label">Email Address</label>
-                    <input type="email" name="email" class="form-control" id="exampleInputEmail1">            <!-- name="email" -->
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail1">                  <!-- name="email" -->
                 </div>
                 <div class="form-group row ml-1">
                     <label for="exampleInputPassword1" class="col-form-label">Password</label>
-                    <input type="password" name="pw" class="form-control" id="exampleInputPassword1">   <!-- name="password" -->
+                    <input type="password" name="password" class="form-control" id="exampleInputPassword1">         <!-- name="password" -->
                 </div>
-                <button type="submit" class="btn btn-primary ml-1" value="login">LOGIN</button>               <!-- name="login" -->
-                <a href="#">Forgot Password?</a>
+                <div class="form-group row ml-1">
+                    <label for="exampleInputPassword1" class="col-form-label">Password Check</label>
+                    <input type="password" name="password-check" class="form-control" id="exampleInputPassword1">   <!-- name="password-check" -->
+                </div>
+                <div class="form-group row ml-1">
+                    <label for="exampleInputPassword1" class="col-form-label">Name</label>
+                    <input type="text" name="name" class="form-control" id="exampleInputPassword1">             <!-- name="name" -->
+                </div>
+                <div class="form-group ml-1">
+                    <label for="exampleInputPassword1" class="col-form-label">Type</label>
+                    <div class="form-group row ml-1">
+                        <div class="form-check form-check-linine ml-2 mt-2">
+                            <input type="radio" name="type" class="form-check-input" id="inlineRadio1" value="student">
+                            <label class="form-check-label" for="inlineRadio1">Student</label>
+                        </div>
+                        <div class="form-check form-check-linine ml-2 mt-2">
+                            <input type="radio" name="type" class="form-check-input" id="inlineRadio2" value="teacher">
+                            <label class="form-check-label" for="inlineRadio2">Teacher</label>
+                        </div>
+                        <div class="form-check form-check-linine ml-2 mt-2">
+                            <input type="radio" name="type" class="form-check-input" id="inlineRadio3" value="ibmer">
+                            <label class="form-check-label" for="inlineRadio3">IBMer</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row ml-1">
+                    <label for="exampleInputPassword1" class="col-form-label">Register Code</label>
+                    <input type="text" name="code" class="form-control" id="exampleInputPassword1" placeholder="You cannot sign up without a code.">             <!-- name="name" -->
+                </div>
+                <div class="form-check ml-1">
+                    <input type="checkbox" name="agree" class="form-check-input" id="inlineCheckbox1" value="agree">
+                    <label class="form-check-label" for="inlineCheckbox1">I agree the Privacy Policy.</label>
+                </div>
+                <button type="submit" class="btn btn-primary ml-1 mt-2" value="register">Sign Up</button>                <!-- name="register" -->
             </form>
         </div>
     </main>
